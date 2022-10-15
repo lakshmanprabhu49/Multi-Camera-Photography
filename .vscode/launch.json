@@ -1,0 +1,79 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "multi_camera_photography_fe",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "multi_camera_photography_fe (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "multi_camera_photography_fe (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Pixel 4 Device 1",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+        },
+        {
+            "name": "Pixel 3 Device 2",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5556"
+        },
+        {
+            "name": "OnePlus 9",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "288e756e"
+        },
+        {
+            "name": "Galaxy Tab A",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "52031a164efb54c5"
+        },
+        {
+            "name": "Nokia 7 plus",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "B2NGAA8842317246"
+        },
+        {
+            "name": "Redmi 6A",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "c6751a667d29"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "All Virtual Devices",
+            "configurations": ["Pixel 4 Device 1", "Pixel 3 Device 2"],
+        },
+        {
+            "name": "All Real Devices",
+            "configurations": ["OnePlus 9", "Galaxy Tab A"],
+        },
+        {
+            "name": "All Testing Real Devices",
+            "configurations": ["Nokia 7 plus", "Redmi 6A"],
+        },
+        {
+            "name": "Config 1",
+            "configurations": ["Nokia 7 plus", "Galaxy Tab A"],
+        },
+    ]
+}

@@ -12,4 +12,5 @@ void userInfoMiddleWare(
       // Dispatch Fail Action
     }
   }
+  next(action);
 }

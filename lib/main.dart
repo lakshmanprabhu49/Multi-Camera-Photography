@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'package:multi_camera_photography_fe/src/redux/app_reducers.dart';
 import 'package:multi_camera_photography_fe/src/redux/app_state.dart';
 import 'package:multi_camera_photography_fe/src/redux/middlewares/user_info.middlewares.dart';
@@ -13,10 +14,11 @@ final Store<AppState> appStore = Store<AppState>(appReducer,
     middleware: [
       userInfoMiddleWare,
     ]);
-
 void main() {
-  runApp(MaterialApp(
-    home: HomeScreen(),
-    navigatorObservers: [routeObserver],
-  ));
+  runApp(StoreProvider(
+      store: appStore,
+      child: MaterialApp(
+        home: HomeScreen(),
+        navigatorObservers: [routeObserver],
+      )));
 }

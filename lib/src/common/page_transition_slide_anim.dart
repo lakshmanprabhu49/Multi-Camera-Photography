@@ -5,7 +5,7 @@ class PageTransitionSlideAnim extends PageRouteBuilder {
   final Duration transitionDuration;
   PageTransitionSlideAnim({
     required this.child,
-    this.transitionDuration = const Duration(milliseconds: 500),
+    this.transitionDuration = const Duration(milliseconds: 200),
   }) : super(
             transitionDuration: transitionDuration,
             pageBuilder: (context, animation, secondaryAnimation) => child);
